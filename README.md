@@ -7,12 +7,10 @@
 This repository contains the current VHDL implementation of a Rational Arithmetic Unit based on Binary Continued Logarithms as described in the included [Paper](Hardware_Development_of_a_Rational_Number_Arithmetic_Computation_Unit_Using_Binary_Continued_Logarithms.pdf).
 
 
-## Abstract
-In this project, an Arithmetic Computation Unit for operating on Binary Continued Logarithms (BCLs) is developed which is a
-a novel decimal number representation That can represent any
-rational number losslessly given a large enough width. The paper
-first presents the mathematical theory that allows storing high precision decimal numbers, then it outlines the theory for performing mathematical operations on the type. After presenting
-the mathematical theory, the custom type and operations are
-implemented in VHDL and a hardware accelerator is built which
-is dedicated to performing high-precision decimal arithmetic on
-the type.
+# High-Precision Calculator Hardware
+
+This project builds a specialized calculator chip that can perform math with perfect accuracy on decimal numbers. Unlike regular computer math that rounds numbers and loses precision, this system uses a new number format called Binary Continued Logarithms (BCLs) that stores numbers exactly without any loss.
+
+The project has two main parts: first, developing the math theory behind BCLs; and second, programming the logic in VHDL (a hardware description language) to create a hardware design for the calculator.
+
+This precise math is important for applications like banking software and scientific research where even tiny rounding errors can accumulate and cause big problems over time.
